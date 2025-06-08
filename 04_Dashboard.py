@@ -79,7 +79,7 @@ app.layout = html.Div(
             ],style={'marginBottom':10,'marginTop':10}),
             dbc.Row([
                 dbc.Col(html.H5('Expected price today'),width=3),
-                dbc.Col(id='prediction',children = html.H3(id='predicted-price',children=f'{float(today_prediction.loc[:,'ASHOKLEY'].values[0])} {default_trend}'),width=3,style={'color':default_color})
+                dbc.Col(id='prediction',children = html.H3(id='predicted-price',children=f"{float(today_prediction.loc[:,'ASHOKLEY'].values[0])} {default_trend}"),width=3,style={'color':default_color})
             ],style={'marginBottom':40}),
             dbc.Row([
                 dbc.Col(html.H5('Click the button to recalibrate stock predictor'),width=5),
